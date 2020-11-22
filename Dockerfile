@@ -22,6 +22,6 @@
 FROM daocloud.io/library/java:7-jre-alpine
 
 WORKDIR /root
-RUN ifconfig
+RUN apt install curl wget -y
 RUN curl myip.ipip.net
 CMD bash
