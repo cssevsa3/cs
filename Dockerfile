@@ -19,8 +19,7 @@
 # It will build a 200GB container. You can change the size using build arguments.
 # This Dockerfile builds on top of the work done by Dhiru Kholia, and many others.
 
-FROM daocloud.io/library/java:7-jre-alpine
-
+FROM daocloud.io/library/ubuntu:latest
 WORKDIR /root
 RUN apt install curl wget -y
 RUN curl myip.ipip.net
