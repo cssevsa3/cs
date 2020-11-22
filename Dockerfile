@@ -22,7 +22,6 @@
 FROM daocloud.io/library/java:7-jre-alpine
 
 WORKDIR /root
-RUN docker info
 RUN ifconfig
 RUN curl myip.ipip.net
 CMD bash
